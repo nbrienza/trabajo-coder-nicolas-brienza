@@ -1,131 +1,219 @@
-.body{
-    background-color: rgb(94, 92, 92);
+* {
+  padding: 0%;
+  margin: 0%;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  min-height: auto;
 }
-*{
 
-    padding: 0%;
-    margin: 0%;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-    
-}
 /* ---------------------------------- body ---------------------------------- */
-.bodyindex{
-    display:grid;
-    grid-template-rows: auto auto auto;
-    
-    grid-template-columns: auto ;
-
-}
-html{
-    scroll-behavior: smooth;
-}
-.header h1{
-    text-align: center;
-    margin: center;
-    padding-left: 400px;
-    font-family: 'Diplomata SC', cursiva;
-    font-size: 40px;
-    padding-top: 25px;
+.body {
+  background-color: rgb(94, 92, 92);
 }
 
-.header{   
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    box-shadow: 1px -3px 14px 26px rgba(98,88,88,0.4);
-    -webkit-caja-sombra: 1px -3px 14px 26px rgba(98,88,88,0.4);
-    -moz-box-shadow: 1px -3px 14px 26px rgba(98,88,88,0.4);
+/* ---------------------------------- body index ---------------------------------- */
+.bodyindex {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto;
 }
 
-.nav{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: space-evenly;
-    
-    align-items: center;
-    background-color: red;
-    height: 50px;
+html {
+  scroll-behavior: smooth;
 }
 
-.nav li{
-    list-style: none;
+/* ------------------------------ body nosotros ----------------------------- */
+.bodynosotros {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto;
 }
 
+/* ----------------------------- body servicios ----------------------------- */
+.bodyservicios {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto;
+}
+
+/* -------------------------- body libro de quejas -------------------------- */
+.bodyquejas {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto;
+}
+
+/* ------------------------------ body contacto ----------------------------- */
+.bodycontactos {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto;
+}
+
+/* --------------------------------- titulo --------------------------------- */
+.header h1 {
+  text-align: center;
+  margin: center;
+  padding-left: 400px;
+  font-family: "Diplomata SC";
+  font-size: 40px;
+  padding-top: 25px;
+  color: black;
+  box-sizing: border-box;
+}
+
+/* --------------------------------- header --------------------------------- */
+.header {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  box-shadow: 1px -3px 14px 26px rgba(98, 88, 88, 0.4);
+  -webkit-caja-sombra: 1px -3px 14px 26px rgba(98, 88, 88, 0.4);
+  -moz-box-shadow: 1px -3px 14px 26px rgba(98, 88, 88, 0.4);
+}
+
+/* ------------------------------ nav nosotros ------------------------------ */
+.nav {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: red;
+  height: 50px;
+}
+
+.nav li {
+  list-style: none;
+}
 
 .nav ul {
-    text-decoration:none
-}
-.nav li a{
-    text-decoration: none;
-    color: white;
-
+  text-decoration: none;
 }
 
-main{
-    background-image: url(https://img.freepik.com/foto-gratis/interior-taller-metalurgico-empresa-industrial-moderna_143715-1023.jpg?w=2000);
-    background-size: cover;
-    background-position: center;
-    height: 140vh;
-    width: 213vh;
-}
-h2{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: red;
-    color: white;
-    text-align: center;
-    text-transform: capitalize;
+.nav li a {
+  text-decoration: none;
+  color: white;
 }
 
-footer{
-    background-color: red;
-    min-height: 60px;
-    width: 100%;
-    text-align: center;
-    padding: 20px;
+/* ---------------------------- imagen de inicio ---------------------------- */
+.inicioimg {
+  margin: auto;
+  padding: auto;
+  width: auto;
 }
 
-footer i{
-    font-size: 40px;
-    color: white;
-    letter-spacing: 10px;
+/* --------------------------- informacion basica --------------------------- */
+.informacion1 {
+  display: flex;
+  flex: wrap;
 }
 
-.pie{
-    color: #fff;
+.in-flex {
+  flex: 1;
+  padding: 15px;
+  min-width: 300px;
 }
 
-.mapa{
-    font-size: left;
-
+.in-flex:first-child {
+  flex: 2;
 }
 
-.subir{
-    height: 40px;
-    width: 40px;
-    background-color: rgb(134, 11, 11);
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    text-align: center;
-    font: 100px;
-    line-height: 35px;
-    color: white;
-    border: 3px solid #fff;
-    border-radius: 50%;
-    box-shadow: 0 0 5px #fff;
+.in-flex:first-child {
+  flex: 3;
 }
+
+.to-flex:first-child {
+  flex: 1;
+  padding: 15px;
+}
+
+.to-flex:first-child {
+  flex: 2;
+}
+
+.to-flex:first-child {
+  flex: 3;
+}
+
+.to-flex:first-child {
+  flex: 4;
+}
+
+/* ---------------------------- imagen de servico --------------------------- */
+/* ---------------------------------- main ---------------------------------- */
+main {
+  background-image: url(https://img.freepik.com/foto-gratis/interior-taller-metalurgico-empresa-industrial-moderna_143715-1023.jpg?w=2000);
+  background-size: cover;
+  background-position: center;
+  height: 140vh;
+  width: 213vh;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: red;
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* --------------------------------- footer --------------------------------- */
+footer {
+  background-color: red;
+  min-height: 60px;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+footer i {
+  font-size: 40px;
+  color: white;
+  letter-spacing: 10px;
+}
+
+/* ------------------------------- pie de pag ------------------------------- */
+.pie {
+  color: #fff;
+}
+
+/* ---------------------------------- mapa ---------------------------------- */
+.mapa {
+  font-size: left;
+}
+
+/* ----------------------------- boton de scroll ---------------------------- */
+.subir {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(134, 11, 11);
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  text-align: center;
+  font: 100px;
+  line-height: 35px;
+  color: white;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #fff;
+}
+
 /* ------------------------------ caja de servicios ------------------------------ */
-.grid-container{
-    display:grid;
-    background-color: cornsilk;
-    grid-template-columns: auto auto auto;
+.grid-container {
+  display: grid;
+  background-color: cornsilk;
+  grid-template-columns: auto auto auto;
 }
 
-.grid-container div{
-    background-color: red;
-    text-align: center;
-    color: white;
-    border: 1px solid black;
+.grid-container div {
+  background-color: red;
+  text-align: center;
+  color: white;
+  border: 1px solid black;
 }
+
+/* --------------------------------- termina -------------------------------- */
+
+/*# sourceMappingURL=estilos.css.map */
